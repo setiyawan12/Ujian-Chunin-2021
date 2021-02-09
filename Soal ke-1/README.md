@@ -25,3 +25,58 @@
       const kondisi = true;
       console.log(typeof kondisi) //? Boolean
       ```
+      
+## IF ELSE AND SWICTH CASE
+  * IF ELSE
+    - Struktur IF adalah stuktur kode pemograman ‘conditional’ yang akan membuat percabangan di dalam program. Dengan menggunakan struktur IF, kita bisa membuat 2 percabangan program yang akan dieksekusi jika ‘kondisi’ terpenuhi, dan akan menjalankan kode program lain jika ‘kondisi’ tidak terpenuhi.
+       ```
+      if (conditional){
+      //jika kondisi terpenuhi
+      }else{
+      //jika kondisi tidak terpenuhi
+      }
+       ```
+   
+ * SWICTH CASE
+   - SWITCH digunakan untuk percabangan kode program dimana kondisi yang diperiksa hanya 1 namun membutuhkan banyak opsi.
+      ```
+     switch(kondisi){
+     case hasil_kondisi_1:
+       break;
+     case hasil_kondisi_2:
+       break;
+     default:
+         kode program untuk kondisi lainnya
+        break;
+      ```
+   - Kondisi untuk inputan struktur SWITCH biasanya adalah variabel yang akan diperiksa. Hasil percabangan dari variabel tersebut akan ditangani oleh perintah case. Opsi default bisa ditambahkan untuk menangani kasus yang tidak ditangani oleh perintah case.
+   
+## Function dan Method
+  * Function
+    - Dalam pemrograman, fungsi sering digunakan untuk membungkus program menjadi bagian-bagian kecil. Logika program yang ada di dalam fungsi dapat kita gunakan kembali dengan memanggilnya. Sehingga tidak perlu menulis ulang.
+       ```
+        <!--  Cara ini paling sering digunakan, terutama buat yang baru belajar Javascript. --!>
+         function namaFungsi(){
+         console.log('Hello Word')
+         }
+      ```
+  * Method
+    - Method bisa di pahami sebagai tindakan atau pekerjaan
+      ```
+      var person = {
+      firstName: "yayang",
+      lastName : "setiyawan",
+      fullName : function() {
+      return this.firstName + " " + this.lastName;
+      }
+      };
+    
+      console.log(person.fullName());
+      ```
+  
+  
+## Syncronus dan Asynchronous
+ * Syncronus
+   - adalah proses jalannya program secara sequential , disini yang dimaksud sequential ada berdasarkan antrian ekseskusi program
+ * Asynchronous
+   - adalah proses jalannya program bisa dilakukan secara bersamaan tanpa harus menunggu proses antrian
